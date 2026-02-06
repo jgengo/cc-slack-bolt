@@ -1,7 +1,7 @@
 <div align="center">
     <img src='.github/docs/logo.png' width="200" height="200" alt="cc-slack-bolt's logo"  /><br />
     <h1 align="center">cc-slack-bolt</h1>
-    <sub>Minimal Python slack-bolt template for Cookiecutter</sub>
+    <sub>Minimal Python Slack Bolt template for Cookiecutter</sub>
 </div>
 
 <div align="center">

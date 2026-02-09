@@ -1,0 +1,27 @@
+[project]
+name = "{{cookiecutter.__pn}}"
+version = "{{cookiecutter._version}}"
+description = "{{cookiecutter.description}}"
+authors = [
+    {name = "{{cookiecutter.author_name}}",email = "{{cookiecutter.author_email}}"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+{% if cookiecutter.sentry %}
+sentry-sdk = '*'
+{% endif %}
+slack-bolt = '*'
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
